@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Item } from './models/item';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'recursive-table';
+  items: Item[] = [
+    {
+      seq: 1,
+      id: 'id-1',
+      name: 'name-1',
+      description: 'description-1',
+      children: [
+        {
+          id: 'id-1-1',
+          name: 'name-1-1',
+          description: 'description-1-1',
+        }
+      ]
+    }
+  ]
 }

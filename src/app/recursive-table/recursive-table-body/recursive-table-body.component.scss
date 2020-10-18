@@ -1,0 +1,16 @@
+:host {
+    .table-row {
+        display: flex;
+    
+        .table-col {
+            margin-right: 10px;
+            min-width: 100px;
+        }
+
+        border-bottom: 1px dashed black;
+        
+        &:last-child {
+            border-bottom: 0;
+        }
+    }    
+}

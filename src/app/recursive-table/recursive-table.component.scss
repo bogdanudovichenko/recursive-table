@@ -1,0 +1,17 @@
+:host {
+    border: 1px solid black;
+    max-width: 600px;
+    margin: 100px auto 0;
+    display: block;
+
+    .table-row {
+        display: flex;
+    
+        .table-col {
+            margin-right: 10px;
+            min-width: 100px;
+        }
+
+        border-bottom: 1px dashed black;
+    }    
+}
