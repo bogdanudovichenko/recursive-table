@@ -18,6 +18,15 @@ export class AppComponent {
           id: 'id-1-1',
           name: 'name-1-1',
           description: 'description-1-1',
+          level: 1,
+          children: [
+            {
+              id: 'id-1-1-1',
+              name: 'name-1-1-1',
+              description: 'description-1-1-1',
+              level: 2
+            }
+          ]
         }
       ]
     }

@@ -8,4 +8,12 @@ import { Item } from 'src/app/models/item';
 })
 export class RecursiveTableBodyComponent {
   @Input() items: Item[] = [];
+
+  getMargin (item: Item) {
+    if(!item.level) {
+      return null;
+    }
+
+    return item.level * -5;
+  }
 }

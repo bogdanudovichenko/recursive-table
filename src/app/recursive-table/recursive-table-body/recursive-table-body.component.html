@@ -1,9 +1,9 @@
 <div class="row-wrapper" *ngFor="let item of items">
     <div class="table-row">
-        <div class="table-col tilda-col">
+        <div class="table-col">
             ~
         </div>
-        <div class="table-col">
+        <div class="table-col" [style.marginLeft.px]="getMargin(item)">
             {{item.seq}}
         </div>
         <div class="table-col">

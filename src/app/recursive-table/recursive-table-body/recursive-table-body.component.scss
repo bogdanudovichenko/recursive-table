@@ -1,4 +1,6 @@
 :host {
+    display: block;
+    
     .table-row {
         display: flex;
     
@@ -12,5 +14,14 @@
         &:last-child {
             border-bottom: 0;
         }
+
+        &:hover {
+            background: green;
+        }
     }    
+
+    recursive-table-body {
+        margin: 5px;
+        border: 1px solid red;
+    }
 }

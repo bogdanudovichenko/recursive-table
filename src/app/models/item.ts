@@ -3,5 +3,6 @@ export interface Item {
     id: string;
     name: string;
     description: string;
-    children?: Item[]
+    children?: Item[],
+    level?: number
 }
