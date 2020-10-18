@@ -14,6 +14,6 @@ export class RecursiveTableBodyComponent {
       return null;
     }
 
-    return item.level * -5;
+    return item.level * -5 - 1;
   }
 }
