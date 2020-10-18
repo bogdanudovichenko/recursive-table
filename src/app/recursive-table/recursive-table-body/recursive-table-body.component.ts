@@ -9,11 +9,19 @@ import { Item } from 'src/app/models/item';
 export class RecursiveTableBodyComponent {
   @Input() items: Item[] = [];
 
-  getMargin (item: Item) {
-    if(!item.level) {
+  getMargin(item: Item) {
+    if (!item.level) {
       return null;
     }
 
     return item.level * -5 - 1;
+  }
+
+  getColWidth(percents: number = 10) {
+    const table = document.querySelector('.recursive-table');
+    var positionInfo = table.getBoundingClientRect();
+    const width = positionInfo.width;
+
+    return width * percents / 100;
   }
 }

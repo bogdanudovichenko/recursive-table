@@ -9,4 +9,12 @@ import { Item } from '../models/item';
 export class RecursiveTableComponent {
 
   @Input() items: Item[] = [];
+
+  getColWidth(percents: number = 10) {
+    const table = document.querySelector('.recursive-table');
+    var positionInfo = table.getBoundingClientRect();
+    const width = positionInfo.width;
+
+    return width * percents / 100;
+  }
 }
